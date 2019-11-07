@@ -1,0 +1,6 @@
+//Intiating code for temp sensor
+#include <DallasTemperature.h>
+OneWire oneWire(14); 
+DallasTemperature sensors(&oneWire);
+long temptimer = millis();
+long lastMeasure = 0;
