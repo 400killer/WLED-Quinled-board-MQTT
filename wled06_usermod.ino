@@ -24,7 +24,7 @@ void userLoop()
       sensors.requestTemperatures();
 
 //Gets prefered temperature scale based on selection in definitions section
-      #ifndef Celsius
+      #ifdef Celsius
       float board_temperature = sensors.getTempCByIndex(0);
       #else
       float board_temperature = sensors.getTempFByIndex(0);
